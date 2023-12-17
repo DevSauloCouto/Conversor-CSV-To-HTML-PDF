@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Tabela</title>
+</head>
+<body>
+    
+    <table>
+        <thead class="container-Thead">
+            <% header.forEach(col => { %>
+                    <th class="itemsHead"> <%= col %> </th>
+            <% }) %>
+        </thead>
+        <tbody class="container-Tbody">
+            <% rows.forEach(row => { %>
+                    <tr>
+                        <% row.forEach(element => { %>
+                                <td class="itemsElement"> <%= element %> </td>
+                        <% }) %>
+                    </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</body>
+</html>
